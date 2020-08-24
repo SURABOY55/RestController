@@ -12,17 +12,13 @@ pipeline {
     }
     stages {
         stage('Build Maven'){
-        //     steps {
-        //         sh '''
-        //             echo "start download maven"
-        //             mvn --version
-        //             mvn clean install -X -Dmaven.test.skip=true
-        //             pwd
-        //             echo "end download maven"
-        //         '''
-        //         stash includes: 'target/rest-0.0.1-SNAPSHOT.jar' , name: 'targetfiles'
-        //     }
-        // }
+            steps {
+                sh '''
+                    echo "start download maven"
+                    echo "end download maven"
+                '''
+            }
+        }
         
     
         // stage('Push image'){
@@ -33,7 +29,6 @@ pipeline {
         //            a.push()
         //         }
         //     }
-        }
     }
 
 }
