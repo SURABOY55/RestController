@@ -22,7 +22,7 @@ pipeline {
         //         '''
         //         stash includes: 'target/rest-0.0.1-SNAPSHOT.jar' , name: 'targetfiles'
         //     }
-        }
+        // }
         
     
         // stage('Push image'){
