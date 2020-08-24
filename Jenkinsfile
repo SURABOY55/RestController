@@ -11,7 +11,7 @@ pipeline {
         maven 'maven3.6.3'
     }
     stages {
-        // stage('Build Maven'){
+        stage('Build Maven'){
         //     steps {
         //         sh '''
         //             echo "start download maven"
@@ -33,7 +33,7 @@ pipeline {
         //            a.push()
         //         }
         //     }
-        // }
+        }
     }
 
 }
