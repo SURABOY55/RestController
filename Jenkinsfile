@@ -11,17 +11,17 @@ pipeline {
         maven 'maven3.6.3'
     }
     stages {
-        stage('Build Maven'){
-            steps {
-                sh '''
-                    echo "start download maven"
-                    mvn --version
-                    mvn clean install -X -Dmaven.test.skip=true
-                    pwd
-                    echo "end download maven"
-                '''
-                stash includes: 'target/rest-0.0.1-SNAPSHOT.jar' , name: 'targetfiles'
-            }
+        // stage('Build Maven'){
+        //     steps {
+        //         sh '''
+        //             echo "start download maven"
+        //             mvn --version
+        //             mvn clean install -X -Dmaven.test.skip=true
+        //             pwd
+        //             echo "end download maven"
+        //         '''
+        //         stash includes: 'target/rest-0.0.1-SNAPSHOT.jar' , name: 'targetfiles'
+        //     }
         }
         
     
