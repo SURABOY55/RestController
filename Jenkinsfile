@@ -25,15 +25,15 @@ pipeline {
         }
         
     
-    //     stage('Push image'){
-    //      steps{
-    //           script {
-    //                unstash 'targetfiles'
-    //                a = docker.build("${env.registry}" +"/"+"${env.imageName}" + ":0."+"0."+"${env.BUILD_NUMBER}" , "-f Dockerfile .")
-    //                a.push()
-    //             }
-    //         }
-    //     }
-    // }
+        // stage('Push image'){
+        //  steps{
+        //       script {
+        //            unstash 'targetfiles'
+        //            a = docker.build("${env.registry}" +"/"+"${env.imageName}" + ":0."+"0."+"${env.BUILD_NUMBER}" , "-f Dockerfile .")
+        //            a.push()
+        //         }
+        //     }
+        // }
+    }
 
 }
